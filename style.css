@@ -20,6 +20,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
+  flex-wrap: wrap;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -42,6 +43,8 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justifz-content: flex-end;
   gap: 15px;
 }
 
