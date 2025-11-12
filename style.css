@@ -1,21 +1,34 @@
+/* ======== OSNOVNI STIL ======== */
 body {
-  margin: 0;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: #fff;
   color: #333;
 }
 
-/* ===== HEADER ===== */
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* ======== NAVIGACIJA ======== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 15px 50px;
-  position: sticky;
+  padding: 15px 5%;
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  border-bottom: 2px solid #ea9999;
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
 }
 
 .logo {
@@ -25,153 +38,258 @@ header {
 }
 
 .signature {
-  font-family: "Brush Script MT", cursive;
-  font-size: 28px;
-  color: #d4af37;
+  font-family: "Great Vibes", cursive;
+  font-size: 26px;
+  color: #d4af37; /* Zlatna */
   margin: 0;
 }
 
 .subtitle {
-  margin: 0;
   font-size: 12px;
-  color: #333;
-  font-weight: bold;
   letter-spacing: 2px;
+  color: #444;
+  font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
   margin: 0;
-  padding: 0;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  transition: color 0.3s, transform 0.2s;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #ea9999;
   transform: scale(1.05);
 }
 
-/* ===== HERO SECTION ===== */
+/* ======== HERO SEKCIJA ======== */
 .hero {
+  background: linear-gradient(135deg, #f4b6b6, #ea9999);
+  color: white;
+  text-align: center;
+  padding: 160px 20px 120px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  background-color: white;
+  color: #ea9999;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #ffe6e6;
+  transform: scale(1.05);
+}
+
+/* ======== SEKCIJA O MENI ======== */
+#about {
+  padding: 100px 10% 80px;
+}
+
+.about-header {
+  text-align: center;
+  background: linear-gradient(135deg, #f4b6b6, #ea9999);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 10%;
-  background-color: #ea9999;
+  flex-wrap: wrap;
+}
+
+.about-photo img {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 17px;
+}
+
+/* ======== SEKCIJA PROGRAMI I USLUGE ======== */
+#services {
+  padding: 100px 10%;
+}
+
+.section-header {
+  text-align: center;
+  background: linear-gradient(135deg, #f4b6b6, #ea9999);
   color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
-.hero-text {
-  max-width: 50%;
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.hero-text h2 {
-  font-size: 38px;
-  margin-bottom: 15px;
-}
-
-.hero-text p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 28px;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  background-color: white;
-  color: #ea9999;
-}
-
-.hero-image img {
-  width: 320px;
-  border-radius: 8px;
-}
-
-/* ===== FOOTER ===== */
-footer {
+.service-item {
   background-color: #fff;
-  padding: 50px 10%;
-  border-top: 2px solid #ea9999;
+  border-radius: 10px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   text-align: center;
 }
 
-.contact-section h3 {
-  color: #ea9999;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.socials a {
+/* Dugme outline */
+.btn-outline {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 2px solid #ea9999;
   color: #ea9999;
   text-decoration: none;
+  border-radius: 25px;
   font-weight: bold;
-  margin: 0 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-.socials a:hover {
-  text-decoration: underline;
+.btn-outline:hover {
+  background-color: #ea9999;
+  color: white;
+  transform: scale(1.05);
 }
 
-.newsletter {
-  margin-top: 30px;
+/* ======== SEKCIJA BLOG ======== */
+#blog {
+  padding: 100px 10%;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.blog-post {
   background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ea9999;
-  border-radius: 6px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding-bottom: 20px;
 }
 
-.newsletter h3 {
-  color: #ea9999;
-}
-
-.newsletter label {
-  display: block;
-  text-align: left;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.newsletter input {
+.blog-post img {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* ======== BESPLATNI SADRŽAJ ======== */
+#free {
+  padding: 100px 10%;
+}
+
+.free-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.free-item {
+  width: 280px;
+  text-align: center;
+}
+
+.free-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ======== KONTAKT ======== */
+#contact {
+  padding: 100px 10%;
+}
+
+.contact-form, .newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.newsletter-form input {
+  padding: 10px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+.btn, .btn-outline {
+  cursor: pointer;
 }
 
 /* Dugme newsletter */
-.newsletter-button {
-  background-color: transparent;
-  color: #ea9999;
-  border: 2px solid #ea9999;
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 15px;
+.newsletter-form .btn-outline {
+  align-self: center;
 }
 
-.newsletter-button:hover {
-  background-color: #ea9999;
-  color: white;
+.socials {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.socials .icon {
+  margin: 0 10px;
+  color: #ea9999;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.socials .icon:hover {
+  color: #d4af37;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff3f3;
+  font-size: 14px;
+  color: #555;
 }

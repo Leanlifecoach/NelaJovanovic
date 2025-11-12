@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt | Sanela Jovanović</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- Navigacija -->
   <header>
-    <div class="logo">Sanela Jovanović
-      <span>Lean Life Coach</span>
+    <div class="logo">
+      <h2 class="potpis">Sanela Jovanović</h2>
+      <p class="titula">LEAN LIFE COACH</p>
     </div>
     <nav>
       <ul>
@@ -26,56 +26,62 @@
     </nav>
   </header>
 
-  <!-- ===== KONTAKT SEKCIJA ===== -->
-  <section class="kontakt" style="margin-top:130px; text-align:center;">
-    <h2>KONTAKT</h2>
-    <p>Ukoliko želite da me kontaktirate ili se prijavite na neki od programa, ispunite formu ispod.</p>
+  <!-- Sekcija kontakt -->
+  <section class="kontakt-section">
+    <h1>KONTAKT</h1>
+    <p>Popunite formu ispod i biće mi zadovoljstvo da vam odgovorim.</p>
 
-    <form class="contact-form" action="https://formsubmit.co/sanelajovanovic90@hotmail.com" method="POST">
-      <label for="ime">Ime</label>
-      <input type="text" id="ime" name="ime" required>
+    <form class="kontakt-form">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
 
-      <label for="prezime">Prezime</label>
-      <input type="text" id="prezime" name="prezime" required>
+      <label for="prezime">Prezime:</label>
+      <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Vaš email" required>
 
-      <label for="poruka">Vaša poruka</label>
-      <textarea id="poruka" name="poruka" rows="5" required></textarea>
+      <label for="poruka">Vaša poruka:</label>
+      <textarea id="poruka" name="poruka" rows="5" placeholder="Unesite poruku..." required></textarea>
 
-      <button type="submit" class="btn">POŠALJI</button>
+      <button type="submit">POŠALJI</button>
     </form>
-
-    <div class="newsletter">
-      <h3 style="margin-top:60px;">PRIJAVA NA NEWSLETTER</h3>
-      <p>Ukoliko želite da na svoj e-mail primate obaveštenja o novom blogu, programima i besplatnim sadržajima, prijavite se ispod.</p>
-      <form class="newsletter-form" action="https://formsubmit.co/sanelajovanovic90@hotmail.com" method="POST">
-        <label for="ime2">Ime</label>
-        <input type="text" id="ime2" name="ime2" required>
-
-        <label for="prezime2">Prezime</label>
-        <input type="text" id="prezime2" name="prezime2" required>
-
-        <label for="email2">Email</label>
-        <input type="email" id="email2" name="email2" required>
-
-        <button type="submit" class="btn">PRIJAVI SE NA NEWSLETTER</button>
-      </form>
-    </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- Newsletter sekcija -->
+  <section class="newsletter">
+    <h2>PRIJAVA NA NEWSLETTER</h2>
+    <p>Ukoliko želite da na svoj e-mail primate obaveštenja o novim blogovima, programima i besplatnom sadržaju, prijavite se ispod.</p>
+
+    <form class="newsletter-form">
+      <label for="newsletter-ime">Ime:</label>
+      <input type="text" id="newsletter-ime" name="newsletter-ime" placeholder="Vaše ime">
+
+      <label for="newsletter-prezime">Prezime:</label>
+      <input type="text" id="newsletter-prezime" name="newsletter-prezime" placeholder="Vaše prezime">
+
+      <label for="newsletter-email">Email:</label>
+      <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Vaš email" required>
+
+      <button type="submit">PRIJAVI SE NA NEWSLETTER</button>
+    </form>
+  </section>
+
+  <!-- Podnožje -->
   <footer>
-    <h2>Kontakt</h2>
-    <p>📞 063 720 9751 | ✉️ sanelajovanovic90@hotmail.com</p>
-    <div class="footer-icons">
-      <a href="#"><i>📘</i></a>
-      <a href="#"><i>📸</i></a>
-      <a href="#"><i>💼</i></a>
-      <a href="#"><i>▶️</i></a>
+    <div class="kontakt-info">
+      <p><strong>Telefon:</strong> 063 720 9751</p>
+      <p><strong>Email:</strong> sanelajovanovic90@hotmail.com</p>
     </div>
-    <p style="margin-top:20px;">© 2025 Sanela Jovanović | Sva prava zadržana</p>
+
+    <div class="social-icons">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">YouTube</a>
+    </div>
+
+    <p class="footer-copy">© 2025 Sanela Jovanović | Lean Life Coach</p>
   </footer>
 
 </body>
