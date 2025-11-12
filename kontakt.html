@@ -10,10 +10,7 @@
 
   <!-- Navigacija -->
   <header>
-    <div class="logo">
-      <h2 class="potpis">Sanela Jovanović</h2>
-      <p class="titula">LEAN LIFE COACH</p>
-    </div>
+    <h1 class="logo">Sanela Jovanović</h1>
     <nav>
       <ul>
         <li><a href="index.html">POČETNA</a></li>
@@ -21,20 +18,32 @@
         <li><a href="usluge.html">USLUGE</a></li>
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="besplatno.html">BESPLATNO</a></li>
-        <li><a href="kontakt.html" class="aktivno">KONTAKT</a></li>
+        <li><a href="kontakt.html" class="active">KONTAKT</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Kontakt sekcija -->
-  <section class="kontakt-section">
-    <div class="kontakt-header">
-      <h1>KONTAKT</h1>
-      <p>Popunite formu ispod ili me kontaktirajte direktno putem e-maila ili telefona.</p>
+  <!-- Sekcija Kontakt -->
+  <section class="kontakt-uvod">
+    <h2>KONTAKTIRAJTE ME</h2>
+    <p>Popunite formu ispod i biće mi zadovoljstvo da vam odgovorim.</p>
+  </section>
+
+  <section class="kontakt-container">
+    <div class="kontakt-info">
+      <h3>KONTAKT</h3>
+      <p>📞 0637209751</p>
+      <p>📧 sanelajovanovic90@hotmail.com</p>
+
+      <div class="socijalne-mreze">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+      </div>
     </div>
 
     <div class="kontakt-forma">
-      <!-- Forma koja salje preko Formspree -->
       <form action="https://formspree.io/f/mldaddqb" method="POST">
         <label for="ime">Ime:</label>
         <input type="text" id="ime" name="ime" required>
@@ -49,48 +58,28 @@
         <textarea id="poruka" name="poruka" rows="5" placeholder="Unesite svoju poruku ovde..."></textarea>
 
         <button type="submit">POŠALJI</button>
-
-        <!-- Automatsko preusmeravanje nakon slanja -->
-        <input type="hidden" name="_next" value="https://Leanlifecoach.github.io/hvala.html">
-      </form>
-    </div>
-
-    <!-- Kontakt info i mreze -->
-    <div class="kontakt-info">
-      <p><strong>📧 Email:</strong> <a href="mailto:sanelajovanovic90@hotmail.com">sanelajovanovic90@hotmail.com</a></p>
-      <p><strong>📞 Telefon:</strong> 063 720 9751</p>
-
-      <div class="mreze">
-        <a href="#" target="_blank">Facebook</a> |
-        <a href="#" target="_blank">Instagram</a> |
-        <a href="#" target="_blank">LinkedIn</a> |
-        <a href="#" target="_blank">YouTube</a>
-      </div>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="newsletter">
-      <h2>PRIJAVA NA NEWSLETTER</h2>
-      <p>Ukoliko želite da na svoj e-mail primate obaveštenja o novim blogovima, programima i besplatnom sadržaju:</p>
-
-      <form action="https://formspree.io/f/mldaddqb" method="POST">
-        <label for="ime-news">Ime:</label>
-        <input type="text" id="ime-news" name="ime" required>
-
-        <label for="prezime-news">Prezime:</label>
-        <input type="text" id="prezime-news" name="prezime" required>
-
-        <label for="email-news">Email:</label>
-        <input type="email" id="email-news" name="_replyto" required>
-
-        <button type="submit">PRIJAVI SE NA NEWSLETTER</button>
-
-        <input type="hidden" name="_next" value="https://leanlifecoach.github.io/hvala.html">
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Sekcija Newsletter -->
+  <section class="newsletter">
+    <h3>PRIJAVA NA NEWSLETTER</h3>
+    <p>Ukoliko želite da primate obaveštenja o novim blogovima, programima i besplatnim sadržajima, prijavite se putem forme ispod.</p>
+    <form action="https://formspree.io/f/mldaddqb" method="POST">
+      <label for="ime-news">Ime:</label>
+      <input type="text" id="ime-news" name="ime" required>
+
+      <label for="prezime-news">Prezime:</label>
+      <input type="text" id="prezime-news" name="prezime" required>
+
+      <label for="email-news">Email:</label>
+      <input type="email" id="email-news" name="_replyto" required>
+
+      <button type="submit">PRIJAVI SE NA NEWSLETTER</button>
+    </form>
+  </section>
+
   <footer>
     <p class="footer-copy">© 2025 Sanela Jovanović | Lean Life Coach</p>
   </footer>
