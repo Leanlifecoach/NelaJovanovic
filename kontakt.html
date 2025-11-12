@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt | Sanela Jovanović</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,66 +21,77 @@
         <li><a href="usluge.html">USLUGE</a></li>
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="besplatno.html">BESPLATNO</a></li>
-        <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+        <li><a href="kontakt.html" class="aktivno">KONTAKT</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Sekcija kontakt -->
+  <!-- Kontakt sekcija -->
   <section class="kontakt-section">
-    <h1>KONTAKT</h1>
-    <p>Popunite formu ispod i biće mi zadovoljstvo da vam odgovorim.</p>
+    <div class="kontakt-header">
+      <h1>KONTAKT</h1>
+      <p>Popunite formu ispod ili me kontaktirajte direktno putem e-maila ili telefona.</p>
+    </div>
 
-    <form class="kontakt-form">
-      <label for="ime">Ime:</label>
-      <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
+    <div class="kontakt-forma">
+      <!-- Forma koja salje preko Formspree -->
+      <form action="https://formspree.io/f/tvoj-formspree-kod" method="POST">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
 
-      <label for="prezime">Prezime:</label>
-      <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime" required>
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Vaš email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
 
-      <label for="poruka">Vaša poruka:</label>
-      <textarea id="poruka" name="poruka" rows="5" placeholder="Unesite poruku..." required></textarea>
+        <label for="poruka">Vaša poruka:</label>
+        <textarea id="poruka" name="poruka" rows="5" placeholder="Unesite svoju poruku ovde..."></textarea>
 
-      <button type="submit">POŠALJI</button>
-    </form>
-  </section>
+        <button type="submit">POŠALJI</button>
 
-  <!-- Newsletter sekcija -->
-  <section class="newsletter">
-    <h2>PRIJAVA NA NEWSLETTER</h2>
-    <p>Ukoliko želite da na svoj e-mail primate obaveštenja o novim blogovima, programima i besplatnom sadržaju, prijavite se ispod.</p>
+        <!-- Automatsko preusmeravanje nakon slanja -->
+        <input type="hidden" name="_next" value="https://tvoje-korisnicko-ime.github.io/hvala.html">
+      </form>
+    </div>
 
-    <form class="newsletter-form">
-      <label for="newsletter-ime">Ime:</label>
-      <input type="text" id="newsletter-ime" name="newsletter-ime" placeholder="Vaše ime">
-
-      <label for="newsletter-prezime">Prezime:</label>
-      <input type="text" id="newsletter-prezime" name="newsletter-prezime" placeholder="Vaše prezime">
-
-      <label for="newsletter-email">Email:</label>
-      <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Vaš email" required>
-
-      <button type="submit">PRIJAVI SE NA NEWSLETTER</button>
-    </form>
-  </section>
-
-  <!-- Podnožje -->
-  <footer>
+    <!-- Kontakt info i mreze -->
     <div class="kontakt-info">
-      <p><strong>Telefon:</strong> 063 720 9751</p>
-      <p><strong>Email:</strong> sanelajovanovic90@hotmail.com</p>
+      <p><strong>📧 Email:</strong> <a href="mailto:sanelajovanovic90@hotmail.com">sanelajovanovic90@hotmail.com</a></p>
+      <p><strong>📞 Telefon:</strong> 063 720 9751</p>
+
+      <div class="mreze">
+        <a href="#" target="_blank">Facebook</a> |
+        <a href="#" target="_blank">Instagram</a> |
+        <a href="#" target="_blank">LinkedIn</a> |
+        <a href="#" target="_blank">YouTube</a>
+      </div>
     </div>
 
-    <div class="social-icons">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">YouTube</a>
-    </div>
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2>PRIJAVA NA NEWSLETTER</h2>
+      <p>Ukoliko želite da na svoj e-mail primate obaveštenja o novim blogovima, programima i besplatnom sadržaju:</p>
 
+      <form action="https://formspree.io/f/mldaddqb" method="POST">
+        <label for="ime-news">Ime:</label>
+        <input type="text" id="ime-news" name="ime" required>
+
+        <label for="prezime-news">Prezime:</label>
+        <input type="text" id="prezime-news" name="prezime" required>
+
+        <label for="email-news">Email:</label>
+        <input type="email" id="email-news" name="_replyto" required>
+
+        <button type="submit">PRIJAVI SE NA NEWSLETTER</button>
+
+        <input type="hidden" name="_next" value="https://tvoje-korisnicko-ime.github.io/hvala.html">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
     <p class="footer-copy">© 2025 Sanela Jovanović | Lean Life Coach</p>
   </footer>
 
