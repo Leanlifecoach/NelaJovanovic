@@ -3,61 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt | Sanela Jovanović</title>
+  <title>Kontakt | Sanela Jovanović - Lean Life Coach</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
   <!-- Navigacija -->
   <header>
-    <h1 class="logo">Sanela Jovanović <span>LEAN LIFE COACH</span></h1>
-    <nav>
+    <div class="logo">
+      <h1 class="potpis">Sanela Jovanović</h1>
+      <p class="titula">LEAN LIFE COACH</p>
+    </div>
+    <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Početna</a></li>
-        <li><a href="omeni.html">O meni</a></li>
-        <li><a href="usluge.html">Usluge</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        <li><a href="index.html">POČETNA</a></li>
+        <li><a href="o-meni.html">O MENI</a></li>
+        <li><a href="usluge.html">USLUGE</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="besplatno.html">BESPLATNO</a></li>
+        <li><a href="kontakt.html" class="active">KONTAKT</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Sekcija naslov -->
-  <section class="kontakt-naslov">
-    <h2>Kontakt</h2>
-  </section>
+  <!-- Kontakt sekcija -->
+  <section id="kontakt" class="kontakt-section">
+    <h2>KONTAKT</h2>
+    <p>Popunite formu ispod i biću vam dostupna za sva vaša pitanja.</p>
 
-  <!-- Sekcija forma -->
-  <section class="kontakt">
-    <div class="kontakt-tekst">
-      <p>Hvala ti što si ovde!<br> 
-      Ispuni formu ispod i odgovoriću ti u najkraćem mogućem roku.</p>
-    </div>
+    <form action="https://formspree.io/f/xrbrbrpg" method="POST" class="kontakt-form">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" required>
 
-    <div class="kontakt-form">
-  <!-- Forma koja šalje preko Formspree -->
-  <form action="https://formspree.io/f/xananand" method="POST">
-    <label for="ime">Ime:</label>
-    <input type="text" id="ime" name="ime" required>
+      <label for="prezime">Prezime:</label>
+      <input type="text" id="prezime" name="prezime" required>
 
-    <label for="prezime">Prezime:</label>
-    <input type="text" id="prezime" name="prezime" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="_replyto" required>
+      <label for="poruka">Vaša poruka:</label>
+      <textarea id="poruka" name="poruka" rows="5" required></textarea>
 
-    <label for="poruka">Vaša poruka:</label>
-    <textarea id="poruka" name="poruka" rows="5" placeholder="Unesite svoju poruku ovde..." required></textarea>
-
-    <button type="submit">POŠALJI</button>
-      </form>
-    </div>
+      <button type="submit" class="posalji-btn">POŠALJI</button>
+      <input type="hidden" name="_next" value="https://tvoje-korisnicko-ime.github.io/hvala.html">
+    </form>
   </section>
 
   <!-- Newsletter -->
-  <section class="newsletter">
-    <h3>Prijava na newsletter</h3>
-    <form action="https://formspree.io/f/xwpapvny" method="POST">
+  <section id="newsletter" class="newsletter-section">
+    <h3>Prijava na NEWSLETTER</h3>
+    <p>Ukoliko želite da na svoj e-mail primate obaveštenja o novim blogovima, programima i besplatnim sadržajima, prijavite se ispod.</p>
+
+    <form action="https://formspree.io/f/xrbrbrpg" method="POST" class="newsletter-form">
       <label for="ime-news">Ime:</label>
       <input type="text" id="ime-news" name="ime" required>
 
@@ -67,7 +64,8 @@
       <label for="email-news">Email:</label>
       <input type="email" id="email-news" name="_replyto" required>
 
-      <button type="submit">PRIJAVI SE NA NEWSLETTER</button>
+      <button type="submit" class="newsletter-btn">PRIJAVI SE NA NEWSLETTER</button>
+      <input type="hidden" name="_next" value="https://tvoje-korisnicko-ime.github.io/hvala.html">
     </form>
   </section>
 
@@ -75,6 +73,5 @@
   <footer>
     <p class="footer-copy">© 2025 Sanela Jovanović | Lean Life Coach</p>
   </footer>
-
 </body>
 </html>
