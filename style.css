@@ -151,6 +151,17 @@ nav a.active {
     color: white;
 }
 
+@media (max-width: 900px) {
+    .index-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .index-img img {
+        width: 250px;
+    }
+}
+
 /* =========================================================
    O MENI / USLUGE / BLOG / BESPLATNO – OPŠTI RASPORED
 ========================================================= */
