@@ -107,12 +107,13 @@ nav a.active {
 ========================================================= */
 
 .index-wrapper {
-    width: 85%;
+    width: 80%;
+    max-width: 1200px;
     margin: 60px auto;
     display: flex;
     gap: 40px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .index-img {
@@ -122,16 +123,17 @@ nav a.active {
 }
 
 .index-img img {
-    width: 350px;
+    width: 100%;
+    max-width: 420px;
     height: auto;
     border-radius: 10px;
 }
 
 .index-text {
-   flex: 1;
+    flex: 1;
     max-width: 500px;
     text-align: center;
-   font-size: 18px
+    font-size: 19px
 }
 
 /* Dugme */
