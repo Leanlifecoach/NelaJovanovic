@@ -120,12 +120,12 @@ nav a.active {
 .index-img {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .index-img img {
     width: 100%;
-    max-width: 350px;
+    max-width: 100px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -135,7 +135,7 @@ nav a.active {
 .index-text {
     flex: 1;
     max-width: 500px;
-    text-align: left;
+    text-align: right;
 }
 
 .index-text p {
